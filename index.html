@@ -13,9 +13,10 @@
     <meta property="og:description" content="Solutions expertes pour des projets durables.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="[URL_DU_SITE]">
-    <meta property="og:image" content="assets/img/img-page-projets.jpeg">
+    <meta property="og:image" content="assets/img/slide-a.jpeg">
     
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -44,10 +45,22 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <h1 class="animate-fade-in-up">Votre partenaire de référence pour des projets durables</h1>
-                <p class="animate-fade-in-up animate-delay-1">Nous offrons des solutions innovantes en environnement, développement local et génie civil.</p>
-                <a href="services.html" class="btn btn-primary animate-fade-in-up animate-delay-2">Découvrir nos services</a>
+            <div class="swiper-container hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('assets/img/slide-a.jpeg');"></div>
+                    <div class="swiper-slide" style="background-image: url('assets/img/slide-c.jpeg');"></div>
+                    <div class="swiper-slide" style="background-image: url('assets/img/slide-f.jpeg');"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="animate-fade-in-up">Votre partenaire de référence pour des projets durables</h1>
+                    <p class="animate-fade-in-up animate-delay-1">Nous offrons des solutions innovantes en environnement, développement local et génie civil.</p>
+                    <a href="services.html" class="cta-button animate-fade-in-up animate-delay-2">Découvrir nos services</a>
+                </div>
             </div>
         </section>
 
@@ -168,6 +181,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
     <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 </body>

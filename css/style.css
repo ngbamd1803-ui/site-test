@@ -170,13 +170,91 @@ img {
     box-shadow: 0 7px 20px rgba(82, 149, 80, 0.3);
 }
 
-/* --- Generic Hero Section (for other pages) --- */
+/* --- Hero Section --- */
 .hero {
-    background: var(--primary-color-darker);
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
     color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 6rem 0; /* Increased padding slightly */
 }
+
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slider .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    margin-top: 1.5rem;
+}
+
+.cta-button:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+/* Swiper Controls */
+.hero-slider .swiper-button-next, 
+.hero-slider .swiper-button-prev {
+    color: var(--white-color);
+    transition: opacity 0.3s ease;
+}
+
+.hero-slider .swiper-button-next:hover, 
+.hero-slider .swiper-button-prev:hover {
+    opacity: 0.7;
+}
+
+.hero-slider .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+    background-color: var(--white-color);
+}
+
 
 /* --- Slider --- */
 .slider-container {
@@ -606,6 +684,10 @@ img {
 
     .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(30, 41, 59)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3e%3c/svg%3e");
+    }
+
+    .hero {
+        height: 50vh;
     }
 }
 
