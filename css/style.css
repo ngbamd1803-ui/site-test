@@ -525,10 +525,10 @@ img {
 }
 
 /* BG Images for Service Depts */
-#dept-environnement::before { background-image: url('../assets/img/service-environnement.jpg'); }
-#dept-developpement::before { background-image: url('../assets/img/service-developpement-local.jpg'); }
-#dept-geniecivil::before { background-image: url('../assets/img/service-genie-civil.jpg'); }
-#dept-ingenierie::before { background-image: url('../assets/img/service-audit.jpg'); }
+#dept-environnement::before { background-image: url('../assets/img/service-environnement.jpeg'); }
+#dept-developpement::before { background-image: url('../assets/img/service-developpement-local.jpeg'); }
+#dept-geniecivil::before { background-image: url('../assets/img/service-genie-civil.jpeg'); }
+#dept-ingenierie::before { background-image: url('../assets/img/service-audit.jpeg'); }
 
 /* BG Images for Homepage Projects */
 #project-amenagement::before { background-image: url('../assets/img/projet-amenagement-forestier.jpg'); }
