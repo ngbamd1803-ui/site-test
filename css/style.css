@@ -193,7 +193,7 @@ img {
 
 .hero-slider .swiper-slide {
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 
 .hero-slider::after {
@@ -525,10 +525,10 @@ img {
 }
 
 /* BG Images for Service Depts */
-#dept-environnement::before { background-image: url('../assets/img/service-environnement.jpeg'); }
+#dept-environnement::before { background-image: url('../assets/img/D1.jpeg'); }
 #dept-developpement::before { background-image: url('../assets/img/service-developpement-local.jpeg'); }
 #dept-geniecivil::before { background-image: url('../assets/img/service-genie-civil.jpeg'); }
-#dept-ingenierie::before { background-image: url('../assets/img/service-audit.jpeg'); }
+#dept-ingenierie::before { background-image: url('../assets/img/D4.jpeg'); }
 
 /* BG Images for Homepage Projects */
 #project-amenagement::before { background-image: url('../assets/img/projet-amenagement-forestier.jpg'); }
@@ -742,4 +742,11 @@ img {
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: var(--border-radius);
-}
+}. p r o j e c t - m e t a   { 
+         f o n t - s i z e :   0 . 8 5 r e m ; 
+         c o l o r :   # 6 6 6 ; 
+         m a r g i n - t o p :   1 r e m ; 
+         b o r d e r - t o p :   1 p x   s o l i d   # e e e ; 
+         p a d d i n g - t o p :   1 r e m ; 
+ }  
+ 
