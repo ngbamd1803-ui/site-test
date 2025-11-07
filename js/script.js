@@ -175,4 +175,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // --- Card Slider Logic ---
+    const cardSliders = document.querySelectorAll('.card-slider');
+    cardSliders.forEach(slider => {
+        const slides = slider.querySelector('.card-slides');
+        const slideImages = slides.querySelectorAll('.card-slide');
+        const prevBtn = slider.querySelector('.prev');
+        const nextBtn = slider.querySelector('.next');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : slideImages.length - 1;
+            showSlide(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex < slideImages.length - 1) ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+        });
+    });
+
 });
